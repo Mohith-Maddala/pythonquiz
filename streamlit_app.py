@@ -67,12 +67,12 @@ questions_data = [
         ]
     },
     {
-        "question": "Given this function:\n\n```python\ndef print_banner(text, border=\"-\"):\n  # code...\n```\n\nHow would you call this function to print \"Hello\" with a \"*\" border?",
-        "options": [
-            {"text": "`print_banner(\"Hello\", \"*\")`", "rationale": "This positional call correctly passes \"Hello\" for `text` and \"*\" for `border`, overriding the default.", "isCorrect": True},
-            {"text": "`print_banner(text=\"Hello\")`", "rationale": "This call only provides the `text` argument, so the `border` argument would use its default value of \"-\".", "isCorrect": False},
-            {"text": "`print_banner(\"*\")`", "rationale": "This positional call would assign \"*\" to the first parameter, `text`, which is not what is intended and would be missing the required `text` argument.", "isCorrect": False},
-            {"text": "`print_banner(border=\"*\", \"Hello\")`", "rationale": "This is a syntax error. A positional argument (\"Hello\") cannot follow a named argument (`border=\"*\"`).", "isCorrect": False}
+        #"question": "Given this function:\n\n```python\ndef print_banner(text, border=\"-\"):\n  # code...\n```\n\nHow would you call this function to print \"Hello\" with a \"*\" border?",
+        #"options": [
+         #   {"text": "`print_banner(\"Hello\", \"*\")`", "rationale": "This positional call correctly passes \"Hello\" for `text` and \"*\" for `border`, overriding the default.", "isCorrect": True},
+         #   {"text": "`print_banner(text=\"Hello\")`", "rationale": "This call only provides the `text` argument, so the `border` argument would use its default value of \"-\".", "isCorrect": False},
+          #  {"text": "`print_banner(\"*\")`", "rationale": "This positional call would assign \"*\" to the first parameter, `text`, which is not what is intended and would be missing the required `text` argument.", "isCorrect": False},
+          #  {"text": "`print_banner(border=\"*\", \"Hello\")`", "rationale": "This is a syntax error. A positional argument (\"Hello\") cannot follow a named argument (`border=\"*\"`).", "isCorrect": False}
         ]
     },
     {
