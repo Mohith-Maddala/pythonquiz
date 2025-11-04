@@ -67,7 +67,8 @@ questions_data = [
         ]
     },
     {
-        "question": "Given this function:\n\n```python\ndef print_banner(text, border=\"-\"):\n  \"\"\"Prints text surrounded by a border.\"\"\"\n  \n  # Calculate the length for the top/bottom border lines\n  line_length = len(text) + 4  # Add 4 for spaces and border characters\n  \n  print(border * line_length)  # Print the top border\n  print(f\"{border} {text} {border}\") # Print the text line\n  print(border * line_length)  # Print the bottom border\n```\n\nHow would you call this function to print \"Hello\" with a \"*\" border?""options": [
+        "question": "Given this function:\n\n```python\ndef print_banner(text, border=\"-\"):\n  \"\"\"Prints text surrounded by a border.\"\"\"\n  \n  # Calculate the length for the top/bottom border lines\n  line_length = len(text) + 4  # Add 4 for spaces and border characters\n  \n  print(border * line_length)  # Print the top border\n  print(f\"{border} {text} {border}\") # Print the text line\n  print(border * line_length)  # Print the bottom border\n```\n\nHow would you call this function to print \"Hello\" with a \"*\" border?"
+        "options": [
             {"text": "`print_banner(\"Hello\", \"*\")`", "rationale": "This positional call correctly passes \"Hello\" for `text` and \"*\" for `border`, overriding the default.", "isCorrect": True},
             {"text": "`print_banner(text=\"Hello\")`", "rationale": "This call only provides the `text` argument, so the `border` argument would use its default value of \"-\".", "isCorrect": False},
             {"text": "`print_banner(\"*\")`", "rationale": "This positional call would assign \"*\" to the first parameter, `text`, which is not what is intended and would be missing the required `text` argument.", "isCorrect": False},
